@@ -195,9 +195,26 @@ hr {
     width: 50%;
 }
 
+/* Footer */
+.footer {
+    background-color: #23272a;
+}
+
+.colfooter {
+    width: calc((100% - 20px) / 5);
+    /* debug */
+    background-color: #ffb6c1;
+    border: 1px dashed black;
+    min-height: 200px;
+}
+
 /* Utilities */
 .mb-20 {
     margin-bottom: 20px;
+}
+
+.pdt-20 {
+    padding-top: 20px;
 }
 
 .gap {
