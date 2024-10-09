@@ -73,6 +73,10 @@ hr {
     width: 40%;
 }
 
+.hrlong {
+    width: 20%;
+}
+
 /* Header */
 .header {
     padding: 10px;
@@ -215,6 +219,14 @@ hr {
 
 .pdt-20 {
     padding-top: 20px;
+}
+
+.pdb-20 {
+    padding-bottom: 20px;
+}
+
+.pdtb-20 {
+    padding: 20px 0;
 }
 
 .gap {
