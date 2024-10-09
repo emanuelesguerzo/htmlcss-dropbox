@@ -226,11 +226,10 @@ hr {
 }
 
 .colfooter {
-    width: calc((100% - 20px) / 5);
+    width: calc((100% - 40px) / 5);
     /* debug */
     background-color: #ffb6c1;
     border: 1px dashed black;
-    min-height: 200px;
 }
 
 /* Utilities */
@@ -244,6 +243,10 @@ hr {
 
 .mb-40 {
     margin-bottom: 40px;
+}
+
+.mt-10 {
+    margin-top: 10px;
 }
 
 .pdt-20 {
