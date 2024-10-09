@@ -7,9 +7,61 @@
 
 img {
     max-width: 100%;
+    /* debug */
+    border: 1px dashed black;
+    min-height: 10px;
+    
 }
 
 a {
     text-decoration: none;
     color: inherit;
 }
+
+ul {
+    list-style: none;
+}
+
+/* COMMON */
+/* Layout */
+
+.container-big {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.container-small {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+/* Header */
+.header {
+    padding: 10px;
+    /* debug */
+    background-color: cyan;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left,
+.header-right,
+.header-right ul,
+.header-left ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-left,
+.header-right {
+    /* debug */
+    background-color: goldenrod;
+    border: 1px dashed black;
+}
+
