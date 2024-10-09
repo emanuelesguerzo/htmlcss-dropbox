@@ -35,7 +35,7 @@ h2 {
 
 /* Buttons */
 .btn {
-    padding: 3px 6px;
+    padding: 5px 10px;
     border: 1px solid transparent;
     display: inline-block;
 }
@@ -99,6 +99,8 @@ hr {
     padding: 10px;
     font-size: 0.6rem;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); 
     z-index: 999;
@@ -129,39 +131,88 @@ hr {
     align-items: center;
 }
 
+.row-top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
 .hero-section {
     padding-top: 70px;
+}
+
+.main-title {
+    font-weight: 800;
+    font-size: 1.8rem;
 }
 
 .hero-col40 {
     width: 40%;
     font-size: 0.6rem;
     /* debug */
-    border: 1px dashed black;
-    min-height: 200px;
-    background-color: #1e90ff;
+    /* border: 1px dashed black;
+    min-height: 200px; */
+    /* background-color: #1e90ff; */
 }
 
 .hero-col60 {
     width: 60%;
     /* debug */
-    border: 1px dashed black;
+    /* border: 1px dashed black;
     min-height: 200px;
-    background-color: #ffc0cb;
+    background-color: #ffc0cb; */
+}
+
+.hero-col60 img {
+    width: 340px;
+    position: relative;
 }
 
 /* Business Plan Columns */
+.subtitle {
+    font-size: 1.2rem;
+}
+
+.radio-btn {
+    font-size: 0.6rem;
+    vertical-align: middle;
+    justify-content: left; 
+}
+
+.radio-btn input {
+    vertical-align: middle;
+}
+
 .col-20 {
     width: calc((100% - 20px) / 3);
+    font-size: 0.6rem;
     /* debug */
     background-color: #f08080;
     border: 1px dashed black;
     min-height: 400px;
 }
 
+
+
 .heading {
+    padding: 5px;
+    font-size: 0.7rem;
     text-align: center;
     border-bottom: 1px solid black;
+}
+
+.plan {
+    padding: 0.8rem;
+}
+
+.plan h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.plan .price {
+    padding-bottom: 5px;
 }
 
 .col100 {
@@ -232,6 +283,10 @@ hr {
     border: 1px dashed black;
 }
 
+.language {
+    color: var(--header-bg);
+}
+
 /* Utilities */
 .mb-10 {
     margin-bottom: 10px;
@@ -247,6 +302,14 @@ hr {
 
 .mt-10 {
     margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.ml-20 {
+    margin-left: 20px;
 }
 
 .pdt-20 {
