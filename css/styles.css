@@ -27,8 +27,22 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
 h2 {
-    font-size: 1rem;
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
 }
 
 /* Buttons */
@@ -56,6 +70,7 @@ body {
 
 .fa-solid.fa-arrow-down {
     font-size: 1.5rem;
+    padding-top: 40px;
 }
 
 .fa-solid.fa-check {
@@ -105,7 +120,7 @@ hr {
 /* Header */
 .header {
     padding: 10px;
-    font-size: 0.6rem;
+    font-size: 1rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -118,7 +133,6 @@ hr {
 .nav {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .header ul {
@@ -130,18 +144,13 @@ hr {
 /* Hero */
 .hero-section {
     padding-top: 70px;
-    height: 60vh;
+    height: 80vh;
     margin-bottom: 40px;
-}
-
-.main-title {
-    font-weight: 800;
-    font-size: 1.8rem;
 }
 
 .hero-col30 {
     width: 30%;
-    font-size: 0.6rem;
+    font-size: 1rem;
 }
 
 .hero-col70 {
@@ -149,35 +158,28 @@ hr {
 }
 
 /* Business Plan Columns */
-.subtitle {
-    font-size: 1.2rem;
-}
-
 .radio-btn {
-    font-size: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
-
 
 .col-20 {
     width: calc((100% - 20px) / 3);
-    font-size: 0.5rem;
+    font-size: 1rem;
     border: 1px solid var(--footer-bg)
 }
 
 .heading {
     padding: 5px;
-    font-size: 0.5rem;
+    font-size: 1rem;
     text-align: center;
     border-bottom: 1px solid black;
 }
 
 .plan {
-    padding: 0.8rem;
-}
-
-.plan h3 {
-    font-size: 0.8rem;
-    margin-bottom: 10px;
+    padding: 1rem;
 }
 
 .plan .price {
@@ -222,14 +224,10 @@ hr {
     width: 70%;
 }
 
-.col100-left h3 {
-    font-size: 0.8rem;
-}
-
 .col100-right,
 .col100-left p,
 .col100-left strong {
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 
 .col100-left p {
@@ -253,21 +251,16 @@ hr {
 
 .col60 {
     width: 60%;
-    /* debug */
-    /* background-color: #1e90ff;
-    min-height: 300px;
-    border: 1px dashed black; */
 }
 
 .col40 {
     width: 40%;
+    font-size: 1rem;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* debug */
-    /* background-color: #ffc0cb;
-    min-height: 300px;
-    border: 1px dashed black; */
+    align-items: flex-start;
 }
 
 /* Dropbox Business Section */
