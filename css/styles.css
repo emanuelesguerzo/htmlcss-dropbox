@@ -321,6 +321,48 @@ hr {
     color: var(--main-blue);
 }
 
+/* FAQ Section */
+.faq-container {
+    border-top: 1px solid var(--main-gray);
+    border-bottom: 1px solid var(--main-gray);
+    margin-bottom: 80px;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--main-gray);
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question h3 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding-top: 40px;
+    display: none;
+    font-size: 0.9rem;
+}
+
+.faq-item:hover .faq-answer {
+    display: block;
+}
+
+.faq-item:hover .arrow {
+    transform: rotate(-180deg);
+}
+
 /* Footer */
 .footer {
     background-color: var(--footer-bg);
