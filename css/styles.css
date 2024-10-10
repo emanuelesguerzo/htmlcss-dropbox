@@ -148,7 +148,7 @@ hr {
 
 /* Header */
 .header {
-    padding: 20px 20px 0 20px;
+    padding: 10px;
     font-size: 1rem;
     position: fixed;
     top: 0;
@@ -168,15 +168,19 @@ hr {
 .header-right ul {
     display: flex;
     gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
+.underline a {
+    padding-bottom: 15px;
+}
 
-/* .start {
-    align-items: center;
-} */
 /* Header Hover */
-.underline:hover {
-    border-bottom: 2px solid var(--footer-bg);
+.underline a:hover {
+    border-bottom: 2px solid var(--footer-bg);  
 }
 
 /* Hero */
