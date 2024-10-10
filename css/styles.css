@@ -80,6 +80,14 @@ p.partner {
     background-color: var(--header-bg);
 }
 
+.btn.main:hover {
+    background-color: var(--blue-hue);
+}
+
+.btn.light:hover {
+    background-color: var(--main-gray);
+}
+
 /* Typography */
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -140,7 +148,7 @@ hr {
 
 /* Header */
 .header {
-    padding: 10px;
+    padding: 20px 20px 0 20px;
     font-size: 1rem;
     position: fixed;
     top: 0;
@@ -151,21 +159,24 @@ hr {
     background-color: var(--main-white);
 }
 
-.header-left {
-    display: flex;
-    align-items: center;
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
 }
 
-.header-right ul,
-.header-left ul {
+.header-left ul,
+.header-right ul {
     display: flex;
-    align-items: center;
     gap: 20px;
+}
+
+
+/* .start {
+    align-items: center;
+} */
+/* Header Hover */
+.underline:hover {
+    border-bottom: 2px solid var(--footer-bg);
 }
 
 /* Hero */
@@ -184,7 +195,6 @@ hr {
     width: 70%;
 }
 
-/* Header Hover */
 
 /* Business Plan Columns */
 .radio-btn {
