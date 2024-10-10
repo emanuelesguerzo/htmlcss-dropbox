@@ -1,9 +1,11 @@
 /* Custom Properties */
 :root {
-    --header-bg: #ffffff;
+    --main-white: #ffffff;
     --hero-bg: #b4d0e6;
-    --btn-main: #0061fe;
+    --main-blue: #0061fe;
+    --blue-hue: #0087ff;
     --footer-bg: #000000;
+    --main-gray: #dfdfdf;
 }
 
 /* RESET */
@@ -36,13 +38,28 @@ h2 {
     font-size: 1.7rem;
 }
 
+h2.special {
+    font-size: 1.9rem;
+    margin: 120px 0 40px 0;
+}
+
 h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 1.2rem;
+    color: var(--main-white);
+    padding-bottom: 10px;
 }
 
 p {
-    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+p.partner {
+    margin-bottom: 10px;
 }
 
 /* Buttons */
@@ -53,13 +70,13 @@ p {
 }
 
 .btn.main {
-    background-color: var(--btn-main);
-    color: var(--header-bg);
+    background-color: var(--main-blue);
+    color: var(--main-white);
 }
 
 .btn.light {
     border: 2px solid transparent;
-    border-color: lightgray lightgray black black;
+    border-color: var(--main-gray) var(--main-gray) var(--footer-bg) var(--footer-bg);
     background-color: var(--header-bg);
 }
 
@@ -74,7 +91,11 @@ body {
 }
 
 .fa-solid.fa-check {
-    color: var(--btn-main);
+    color: var(--main-blue);
+}
+
+.fa-solid.fa-chevron-up {
+    font-size: 0.8rem;
 }
 
 /* COMMON */
@@ -127,7 +148,12 @@ hr {
     width: 100%;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); 
     z-index: 999;
-    background-color: var(--header-bg);
+    background-color: var(--main-white);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
 }
 
 .nav {
@@ -135,7 +161,8 @@ hr {
     justify-content: space-between;
 }
 
-.header ul {
+.header-right ul,
+.header-left ul {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -157,6 +184,8 @@ hr {
     width: 70%;
 }
 
+/* Header Hover */
+
 /* Business Plan Columns */
 .radio-btn {
     font-size: 1rem;
@@ -168,14 +197,14 @@ hr {
 .col-20 {
     width: calc((100% - 20px) / 3);
     font-size: 1rem;
-    border: 1px solid var(--footer-bg)
+    border: 1px solid var(--main-gray)
 }
 
 .heading {
     padding: 5px;
     font-size: 1rem;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--main-gray);
 }
 
 .plan {
@@ -204,7 +233,7 @@ hr {
 
 .buynow a {
     text-decoration: underline;
-    color: var(--btn-main);
+    color: var(--main-blue);
 }
 
 .plan h4 {
@@ -213,7 +242,7 @@ hr {
 
 .col100 {
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid var(--main-gray);
 }
 
 .col100-bottom {
@@ -266,30 +295,36 @@ hr {
 /* Dropbox Business Section */
 .colgrid {
     width: calc((100% - 20px) / 3);
-    /* debug */
-    border: 1px dashed black;
-    min-height: 200px;
-    background-color: #d3d3d3;
 }
 
 .colend {
     width: 60%;
 }
 
+.colend span a {
+    text-decoration: underline;
+    color: var(--main-blue);
+}
+
 /* Footer */
 .footer {
-    background-color: #23272a;
+    background-color: var(--footer-bg);
 }
 
 .colfooter {
     width: calc(100% / 5);
-    /* debug */
-    background-color: #ffb6c1;
-    border: 1px dashed black;
+    color: var(--main-white);
+    font-size: 1rem;
+    margin: 40px 0;
+}
+
+.colfooter li {
+    padding-bottom: 10px;
 }
 
 .language {
-    color: var(--header-bg);
+    color: var(--main-white);
+    padding: 30px 0;
 }
 
 /* Utilities */
