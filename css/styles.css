@@ -77,7 +77,11 @@ p.partner {
 .btn.light {
     border: 2px solid transparent;
     border-color: var(--main-gray) var(--main-gray) var(--footer-bg) var(--footer-bg);
-    background-color: var(--header-bg);
+    background-color: var(--main-white);
+}
+
+.btn.trial {
+    background-color: var(--main-white);
 }
 
 .btn.main:hover {
@@ -86,6 +90,10 @@ p.partner {
 
 .btn.light:hover {
     background-color: var(--main-gray);
+}
+
+.btn.trial:hover {
+    background-color: var(--blue-hue);
 }
 
 /* Typography */
@@ -321,10 +329,36 @@ hr {
     color: var(--main-blue);
 }
 
+/* Trial Section */
+.trial-section {
+    background-color: var(--hero-bg);
+    padding: 80px 0;
+}
+.col100-trial {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.trial-left {
+    width: 40%;
+    color: #61082b;
+}
+
+.trial-right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trial-title {
+    font-size: 1.9rem;
+}
+
 /* FAQ Section */
 .faq-container {
     border-top: 1px solid var(--main-gray);
-    border-bottom: 1px solid var(--main-gray);
     margin-bottom: 80px;
 }
 
@@ -355,6 +389,7 @@ hr {
     font-size: 0.9rem;
 }
 
+/* FAQ Hover */
 .faq-item:hover .faq-answer {
     display: block;
 }
